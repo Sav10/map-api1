@@ -31,7 +31,7 @@ class Resource(object):
         resp.body = answer
         resp.status = falcon.HTTP_200
         resp.set_header('X-Powered-By', 'Dataplazza')
-        resp.set_header('Access-Control-Allow-Origin', '*')
+        resp.set_header('Access-Control-Allow-Origin', 'http://www.dataplazza.com')
         resp.set_header('Access-Control-Allow-Headers', 'X-Requested-With')
 
 class Homepage(object):
